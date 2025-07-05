@@ -22,12 +22,31 @@
  * Tentukan Algoritma dan pseudocode untuk luas lingkaran
  * 
  * Algoritma 
- * masukkan variable jari-jari
+ * buat variable jari-jari(r)
+ * buat variable phi
  * hitung luas dengan rumus 3.14 * jari-jari * jari-jari
  * cetak luas
  * 
  * Pseudocode
+ * STORE phi WITH 3.14
  * STORE jari-jari WITH ANY NUMBER
- * STORE luas WITH 3.14 MUL jari-jari MUL jari-jari
+ * STORE luas WITH phi MUL r MUL r
  * PRINT luas
+ */
+/**
+ * Study Case 3
+ * tentukan algoritma dan pseudocode 1/2 volume bola
+ * 
+ * Algoritnma 
+ * buat variable jari-jari(r)
+ * hitung volume bola
+ * cetak volume bola
+ * 
+ * Pseudocode
+ * STORE r WITH ANY NUMBER
+ * STORE volume WITH 4/3 * 3.14 * r * r * r
+ * STORE 1/2 volume WITH 1/2 MUL 4/3 MUL r MUL r MUL r
+ * PRINT volume
+ * 
+ * 
  */
