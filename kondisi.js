@@ -93,23 +93,55 @@ if(number < 2) {
 //     console.log(angka + " adalah Bilangan Ganjil");
 // }
 // STUDY CASE 2
-let choose = "sweet tea";
-switch(choose) {
-    case 'sweet tea':
-        console.log("You Choose Sweet Tea");
-        break;
-    case 'plain tea':
-        console.log("You Choose Plain Tea");
-        break;
-    case 'Boba':
-        console.log("You Choose Boba");
-        break;
-    case 'milk coffee':
-        console.log("You Choose Milk Coffee");
-        break;
-    case 'choco ice':
-        console.log("You Choose Choco Ice");
-        break;
-    default :
-    console.log("Not Ready");
+// let choose = "sweet tea";
+// switch(choose) {
+//     case 'sweet tea':
+//         console.log("You Choose Sweet Tea");
+//         break;
+//     case 'plain tea':
+//         console.log("You Choose Plain Tea");
+//         break;
+//     case 'Boba':
+//         console.log("You Choose Boba");
+//         break;
+//     case 'milk coffee':
+//         console.log("You Choose Milk Coffee");
+//         break;
+//     case 'choco ice':
+//         console.log("You Choose Choco Ice");
+//         break;
+//     default :
+//     console.log("Not Ready");
+// }
+
+/**
+ * STUDY CASE 3
+ */
+
+// let power = 49;
+// let status;
+// if (power > 100) {
+//     status = "Expert";
+// }else if (power >=70 && power <= 100) {
+//     status = "Pro";
+// }else if (power >=50 && power < 70) {
+//     status = "Normal";
+// }else if (power >= 30 && power < 50) {
+//     status = "Basic";
+// }else {
+//     status = "Beginner";
+// }
+// console.log("Character is " + status);
+let power = 49;
+
+if (power > 100) {
+    console.log("Character is Expert");
+}else if (power > 70 && power <=100) {
+    console.log("Character is Pro");
+}else if (power > 50 && power <=70) {
+    console.log("Character is Normal");
+}else if (power > 30 && power <= 50) {
+    console.log("Character is Basic");
+}else if (power <= 30) {
+    console.log("Character is Beginner");
 }
