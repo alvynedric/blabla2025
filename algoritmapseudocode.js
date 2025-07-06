@@ -50,3 +50,38 @@
  * 
  * 
  */
+/**
+ * Study Case 4
+ * ALGORITMA
+ * tentukan algoritma dan pseudocode luas permukaan tabung
+ * buat r tabung
+ * buat t tabung
+ * hitung luas dengan rumus 2 MUL 3.14 MUL r MUL (r ADD t)
+ * cetak luas
+ * 
+ * PSEUDOCODE
+ * STORE r WITH ANY NUMBER
+ * STORE t WITH ANY NUMBER
+ * STORE 3.14
+ * STORE luas WITH 2 MUL 3.14 MUL r MUL (r ADD t)
+ * PRINT luas
+ * 
+ */
+
+/**
+ * STUDY CASE 5
+ * tentukan algoritma dan pseudocode luas permukaan balok
+ * ALGORITMA
+ * buat p
+ * buat l
+ * buat t
+ * hitung luas dengan rumus 2 MUL (p MUL l ADD p MUL t ADD l MUL t)
+ * cetak luas
+ * 
+ * PSEUDOCODE
+ * STORE p
+ * STORE l
+ * STORE t
+ * STORE luas WITH 2 MUL (p MUL l ADD p MUL t ADD l MUL t)
+ * PRINT luas
+ */
