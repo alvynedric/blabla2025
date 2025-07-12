@@ -30,20 +30,6 @@
 // END
 
 // BEGIN
-// var murid = [
-//   [1, "Vincent", 3.5],
-//   [2, "Udin", 3.0],
-//   [3, "Mamang", 2.1],
-// ];
-
-// for (var i = 0; i < murid.length; i++) {
-//   var id = murid[i][0];
-//   var nama = murid[i][1];
-//   var ipk = murid[i][2];
-//   var status = ipk >= 3.0 ? "Lulus" : "Gagal";
-
-//   console.log(id + ". " + nama + ", IPK = " + ipk + ", " + status);
-// }
 //END
 
 // BEGIN
@@ -141,19 +127,67 @@
 // CEK BILANGAN PRIMA
 // BEGIN
 
-let num = 107;
-let factor = 0;
+// let num = 107;
+// let factor = 0;
 
-for (let i = 1; i <= num; i++) {
-  if (num % i === 0) {
-    // factor = factor + 1;
-    // factor += 1;
-    factor++;
-  }
-}
-if (factor === 2) {
-  console.log(`${num} adalah bilangan prima`);
-} else {
-  console.log(`${num} bukan bilangan prima`);
-}
+// for (let i = 1; i <= num; i++) {
+//   if (num % i === 0) {
+//     // factor = factor + 1;
+//     // factor += 1;
+//     factor++;
+//   }
+// }
+// if (factor === 2) {
+//   console.log(`${num} adalah bilangan prima`);
+// } else {
+//   console.log(`${num} bukan bilangan prima`);
+// }
+// END
+
+// BEGIN
+// let num = 19;
+// let factor = 0;
+
+// for(let i = 1; i <= num; i++) {
+//     if(num % i === 0) {
+//         factor++;
+//     }
+// }
+// console.log(`faktor dari ${num} adalah ${factor}`);
+// if(factor === 2){
+//     console.log(`${num} adalah bilangan prima`);
+// }else{
+//     console.log(`${num} bukanlah bilangan prima`);
+// }
+// END
+
+// CEK FACTORIAL SUATU BILANGAN
+// BEGIN
+// let num = 3;
+// let factorial = 1;
+// for (let i = 1; i <= num; i--) {
+//   factorial = factorial * i;
+// }
+// console.log(`faktorial dari ${num} adalah ${factorial}`);
+// END
+
+// Study Case 5
+// MENCETAK HASIL SEPERTI BERIKUT
+/**
+ * #
+ * ##
+ * ###
+ * ####
+ * #####
+ */
+// BEGIN
+// var num = 5;
+// var temp = "";
+// for (var i = 0; i < num; i++) {
+//   for (var j = 0; j <= i; j++) {
+//     temp += "x";
+//   }
+//   console.log(temp);
+//   temp = "";
+// }
 // END
