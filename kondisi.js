@@ -75,7 +75,7 @@ if(number < 2) {
  *  2.1 jika habis maka bilangan genap
  *  2.2 jika tidak habis maka bilangan ganjil
  * 3. Cetak Hasil
- * 
+ *
  * PSEUDOCODE
  * BEGIN
  * 1. STORE angka WITH ANY NUMBER
@@ -117,7 +117,7 @@ if(number < 2) {
 /**
  * STUDY CASE 3
  */
-
+//BEGIN
 // let power = 49;
 // let status;
 // if (power > 100) {
@@ -132,16 +132,160 @@ if(number < 2) {
 //     status = "Beginner";
 // }
 // console.log("Character is " + status);
-let power = 49;
+//END
 
-if (power > 100) {
-    console.log("Character is Expert");
-}else if (power > 70 && power <=100) {
-    console.log("Character is Pro");
-}else if (power > 50 && power <=70) {
-    console.log("Character is Normal");
-}else if (power > 30 && power <= 50) {
-    console.log("Character is Basic");
-}else if (power <= 30) {
-    console.log("Character is Beginner");
-}
+//BEGIN
+// let power = 49;
+
+// if (power > 100) {
+//     console.log("Character is Expert");
+// }else if (power > 70 && power <=100) {
+//     console.log("Character is Pro");
+// }else if (power > 50 && power <=70) {
+//     console.log("Character is Normal");
+// }else if (power > 30 && power <= 50) {
+//     console.log("Character is Basic");
+// }else if (power <= 30) {
+//     console.log("Character is Beginner");
+// }
+//END
+
+//STUDY CASE 4
+// let access = "public";
+// let level = 6;
+// if(access === "") {
+// console.log("Input Access")
+// }else {
+// switch(access) {
+// case "public":
+// if(level < 5) {
+// console.log("Public di bawah 5");
+// }else if(level > 5) {
+// console.log("Public di atas 5");
+// }else {
+// console.log("Public Five");
+// }
+// break;
+// case "private":
+// if(level < 5) {
+// console.log("Private di bawah 5");
+// }else if(level > 5) {
+// console.log("Private di atas 5");
+// }else {
+// console.log("Private is five");
+// }
+// break;
+// case "protected":
+// if(level < 5) {
+// console.log("Protected di bawah 5");
+// }else if(level > 5) {
+// console.log("Protected di atas 5");
+// }else {
+// console.log("Protected is five");
+// }
+// break;
+// default:
+// console.log("Access is not defined");
+// }
+// }
+//END
+
+//STUDY CASE 5
+
+// Data input
+// let status = "WNI"; // atau "WNI"
+// let lamaTinggal = 3; // dalam tahun
+// let usia = 25;
+// let wilayah = ""; // "Barat", "Tengah", "Timur" (hanya untuk WNI)
+// let totalPembelian = 105000;
+// let diskonPersen = 0;
+
+// // Logika diskon berdasarkan status
+// if (status === "WNA") {
+//   if (lamaTinggal < 3) {
+//     diskonPersen = 0;
+//   } else if (lamaTinggal >= 3 && lamaTinggal <= 5) {
+//     if (usia < 21) {
+//       diskonPersen = 10;
+//     } else {
+//       diskonPersen = 5;
+//     }
+//   } else if (lamaTinggal > 5) {
+//     if (usia < 21) {
+//       diskonPersen = 5;
+//     } else {
+//       diskonPersen = 2.5;
+//     }
+//   }
+// } else if (status === "WNI") {
+//   switch (wilayah.toLowerCase()) {
+//     case "barat":
+//       diskonPersen = 10;
+//       break;
+//     case "tengah":
+//       diskonPersen = 15;
+//       break;
+//     case "timur":
+//       diskonPersen = 17.5;
+//       break;
+//     default:
+//       console.log("Wilayah tidak dikenal untuk WNI");
+//   }
+// } else {
+//   console.log("Status pembeli tidak valid");
+// }
+
+// // Hitung diskon dan total bayar
+// let diskon = (diskonPersen / 100) * totalPembelian;
+// let totalBayar = totalPembelian - diskon;
+
+// // Tampilkan hasil
+// console.log(`Warga merupakan : ${status} `);
+// console.log(`Lama tinggal : ${lamaTinggal} tahun`);
+// console.log(`Usia: ${usia} tahun`);
+// console.log(`Total Pembelian: Rp. ${totalPembelian.toLocaleString()}`);
+// console.log(`Diskon: ${diskonPersen}%`);
+// console.log(`Total Bayar: Rp. ${totalBayar.toLocaleString()}`);
+
+// let status = "WNA";
+// let lamaTinggal = 4;
+// let usia = 25;
+// let wilayah = "";
+// let totalPembelian = 100000;
+// let diskonPersen = 0;
+
+// if(status === "WNA"){
+//   if(lamaTinggal < 3){
+//     diskonPersen = 0;
+//   }else{
+//     if(usia < 21) {
+//       diskonPersen = 10;
+//     }else{
+//       diskonPersen = 35;
+//     }
+//     }
+//   } else if(status === "WNI"){
+//     switch(wilayah){
+//       case "barat":
+//         diskonPersen = 15;
+//         break;
+//       case "tengah":
+//         diskonPersen = 30;
+//         break;
+//       case "timur":
+//       diskonPersen = 40;
+//       break;
+//       default:
+//         console.log("Wilayah Tidak Valid");
+//     }
+//     }else{
+//       console.log("Status Tidak Valid");
+//     }
+// let diskon = (diskonPersen / 100) * totalPembelian;
+// let totalBayar = totalPembelian - diskon;
+// console.log(`status : ${status}`);
+// console.log(`lama tinggal : ${lamaTinggal}`);
+// console.log(`Usia : ${usia}`);
+// console.log(`Total Pembelian :${totalPembelian}`);
+// console.log(`Diskon :${diskonPersen}%`);
+// console.log(`Total Bayar : ${totalBayar}`);
