@@ -35,25 +35,25 @@
  (Syarat lulus IPK minimum 3,0)
  */
 // BEGIN
-// var murid = [
-//   [1, "Vincent", 3.5],
-//   [2, "Udin", 3.0],
-//   [3, "Mamang", 2.1]
-// ];
+var murid = [
+  [1, "Vincent", 3.5],
+  [2, "Udin", 3.0],
+  [3, "Mamang", 2.1]
+];
 
-// for(var i = 0; i < murid.length; i++) {
-//     var id = murid[i][0];
-//     var nama = murid[i][1];
-//     var ipk = murid[i][2];
+for(var i = 0; i < murid.length; i++) {
+    var id = murid[i][0];
+    var nama = murid[i][1];
+    var ipk = murid[i][2];
 
-// var status = "";
-// if(ipk >= 3.0) {
-//     status = "Lulus";
-// }else{
-//     status = "Tidak Lulus";
-// }
-// console.log(id+ ". " + nama + " "+ "IPK : " + ipk +" " + status);
-// }
+var status = "";
+if(ipk >= 3.0) {
+    status = "Lulus";
+}else{
+    status = "Tidak Lulus";
+}
+console.log(id+ ". " + nama + " "+ "IPK : " + ipk +" " + status);
+}
 // END
 
 // HITUNG JUMLAH DARI SEMUA VALUE DAN CARI RATA RATA NYA!!
@@ -88,16 +88,16 @@
 // }console.log(temp);
 // END
 
-let watches1 = ["Swiss Army", "Dublot", "Patek Philippe"];
-let watches2= ["A", "B", "C", "D", "E"];
+// let watches1 = ["Swiss Army", "Dublot", "Patek Philippe"];
+// let watches2= ["A", "B", "C", "D", "E"];
 
-let result = "Saya punya ";
-for(let a = 0; a < watches1.length; a+= 1) {
-    let lastIndex = watches1.length - 1;
-    if(a !== lastIndex) {
-        result += watches1[a] + ", ";
-    }else {
-        result += " dan " + watches1[a] + ".";
-    }
-}
-console.log(result);
+// let result = "Saya punya ";
+// for(let a = 0; a < watches1.length; a+= 1) {
+//     let lastIndex = watches1.length - 1;
+//     if(a !== lastIndex) {
+//         result += watches1[a] + ", ";
+//     }else {
+//         result += " dan " + watches1[a] + ".";
+//     }
+// }
+// console.log(result);
