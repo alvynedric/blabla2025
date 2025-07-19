@@ -7,6 +7,7 @@ class Fruit {
         this.category = category
     }
 }
+// inheritance
 class Apple extends Fruit {
     constructor(id, name, price, stock){
         super(id, name, price, stock, 'Apple')
@@ -39,20 +40,21 @@ class Supermarket {
             })
             console.log("==================") 
         }else{
-            console.log("There is no shelv");
+            console.log("There is no shelf");
         }
     }
     // CARA MENAMPILKAN DALAM TABEL
     showItemsinTable(){
         console.table(this.shelves)
     }
+    // END
     addItems(name, price, stock, category){
         let id;
         if(this.shelves.length === 0){
             id = 1;
         }else{
             let lastIndex = this.shelves.length - 1;
-            id = this.shelves.length + 1;;
+            id = this.shelves.length + 1;
         }
         switch (category) {
             case 'Apple':
