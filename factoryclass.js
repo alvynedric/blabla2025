@@ -65,11 +65,28 @@ class Supermarket {
                 this.shelves.push(new Banana(id,name,price,stock));
         }
     }
+    deleteItem(id) {
+        this.shelves = this.shelves.filter((shelf) => shelf.id !== id);
+    }
+    editItem(id, name, price, stock){
+        this.shelves = this.shelves.map((shelf) => {
+            if(shelf.id === id){
+                shelf.name = name
+                shelf.price= price
+                shelf.stock = stock
+            }
+            return shelf;
+        })
+    }
 }
 const supermarket = new Supermarket();
 supermarket.addItems("Apple bau", 10000, 100, 'Apple');
 supermarket.addItems("pisang goreng", 10000, 100, 'Banana');
 supermarket.addItems("Jeruk Limau", 10000, 100, 'Orange');
 supermarket.addItems("Apple Royal", 10000, 100, 'Apple');
+supermarket.addItems("Pisang Basi", 10000, 100, 'Banana');
+supermarket.deleteItem(2);
+supermarket.deleteItem(4);
+supermarket.editItem(1, "Apple Gala Royal", 150000, 56); // Edit Item
 supermarket.showItems();
-supermarket.showItemsinTable(); // Hasilnya menjadi table
+// supermarket.showItemsinTable(); // Hasilnya menjadi table
