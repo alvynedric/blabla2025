@@ -27,31 +27,61 @@ console.log(x);
 
 // const angka = [1,2,3,4,5,6]
 
-// const angkagenap = angka.filter((element)=> element % 2 === 0);
-// const angkakurang3 = angka.filter((element)=> element <3);
+// const angkagenap = angka.filter((item)=> item % 2 === 0);
+// const angkakurang3 = angka.filter((item)=> item <3);
 
 // console.log(angkagenap);
 // console.log(angkakurang3);
 
-const produk = [
-  {
-    nama: "Kemeja",
-    harga: 250000,
-  },
-  {
-    nama: "Celana",
-    harga: 50000,
-  },
-  {
-    nama: "Sepatu",
-    harga: 80000,
-  },
-];
-// cari produk yg harganya 80000 ke atas
+// CARI PRODUK YG HARGANYA DIATAS 80000
+// const produk = [
+//   {
+//     nama: "Kemeja",
+//     harga: 250000,
+//   },
+//   {
+//     nama: "Celana",
+//     harga: 50000,
+//   },
+//   {
+//     nama: "Sepatu",
+//     harga: 80000,
+//   },
+// ];
+// // CARI HARGA DIATAS 80000
+// const hargaTertinggi = produk.filter((item) => item.harga >= 50000);
+// hargaTertinggi.forEach((item) => console.log(`${item.nama} Rp. ${item.harga}`));
+// // END
+// MENGHASILKAN NAMA DAN HARGA PRODUK
+// const arraybaru = produk.map((item) => (`Nama item : ${item.nama} Harga : Rp.${item.harga}`));
+// arraybaru.forEach ((item)=>  console.log(item));
 
-// Cara Mencari Harga Di Atas 80000
-const produkHargaTinggi = produk.filter((element) => element.harga >= 80000);
-// Cara Memanggilnya
-produkHargaTinggi.forEach((item) => {
-  console.log(`${item.nama} - Rp${item.harga}`);
-});
+// INI CARA UNTUK MENAMBAHKAN ITEM MENGGUNAKAN PUSH
+// produk.push ({
+//   nama : "Tas",
+//   harga : 30000
+// })
+// console.log(produk)
+// // END
+
+// // INI CARA UNTUK MENGHAPUS ITEM YG DITAMBAHKAN MENGGUNAKAN POP
+// produk.pop ()
+// console.log(produk)
+// END
+
+// // Cara Mencari Harga Di Atas 80000
+// const produkHargaTinggi = produk.filter((item) => item.harga >= 80000);
+// // Cara Memanggilnya
+// produkHargaTinggi.forEach((item) => {
+//   console.log(`${item.nama} - Rp${item.harga}`);
+// });
+
+// MATERI MAP!!!!!
+// MEMBUAT ANGKA BARU (ANGKA LAMA DIKALI 2)
+// BEGIN
+// const angka = [1,2,4,6,8]
+
+// const angkadikali2 = angka.map((item) => item * 2);
+// console.log(angkadikali2);
+// END
+
