@@ -30,12 +30,46 @@ class Supermarket {
     }
     showItems(){
         console.log("Supermarket shelves:");
-        if(this.shelves >0){
-            console.log(this.shelves)
+        if(this.shelves.length >0){
+            this.shelves.forEach((shelf)=> {
+                // destructuring object
+                const {id, name, price, stock, category} = shelf;
+                console.log(`${id}. Name: ${name}, Price: Rp.${price} Stock : ${stock} pcs. Category: ${category}`);
+                
+            })
+            console.log("==================") 
         }else{
             console.log("There is no shelv");
         }
     }
+    // CARA MENAMPILKAN DALAM TABEL
+    showItemsinTable(){
+        console.table(this.shelves)
+    }
+    addItems(name, price, stock, category){
+        let id;
+        if(this.shelves.length === 0){
+            id = 1;
+        }else{
+            let lastIndex = this.shelves.length - 1;
+            id = this.shelves.length + 1;;
+        }
+        switch (category) {
+            case 'Apple':
+                this.shelves.push(new Apple (id,name,price,stock));
+                break;
+            case 'Orange':
+                this.shelves.push(new Orange(id,name,price,stock));
+                break;
+            case 'Banana':
+                this.shelves.push(new Banana(id,name,price,stock));
+        }
+    }
 }
 const supermarket = new Supermarket();
+supermarket.addItems("Apple bau", 10000, 100, 'Apple');
+supermarket.addItems("pisang goreng", 10000, 100, 'Banana');
+supermarket.addItems("Jeruk Limau", 10000, 100, 'Orange');
+supermarket.addItems("Apple Royal", 10000, 100, 'Apple');
 supermarket.showItems();
+supermarket.showItemsinTable(); // Hasilnya menjadi table
